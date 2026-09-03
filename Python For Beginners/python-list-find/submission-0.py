@@ -1,0 +1,19 @@
+from typing import List # this is used to add type hints for List type
+
+def find_index(nums: List[int], target: int) -> int:
+    index = 1
+    for x in nums:    
+        if x != target:
+            index += 1
+        else:
+            return index - 1
+
+
+
+
+# don't modify code below this line
+print(find_index([1, 2, 3, 4, 5], 3))
+print(find_index([1, 2, 3, 4, 5, 3], 3))
+print(find_index([1, 2, 3, 4], 1))
+print(find_index([1, 3, 4, 2], 2))
+
